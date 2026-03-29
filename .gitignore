@@ -1,0 +1,11 @@
+credentials.json
+token.json
+*.pyc
+__pycache__/
+.env
+ai_employee.log
+venv/
+# LinkedIn Playwright session data
+.linkedin_session/
+# WhatsApp Playwright session data
+.whatsapp_session/

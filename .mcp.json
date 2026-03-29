@@ -1,0 +1,49 @@
+{
+  "mcpServers": {
+    "gmail-sender": {
+      "command": "python3",
+      "args": ["mcp_servers/gmail_sender.py"],
+      "env": {
+        "GMAIL_CREDENTIALS_PATH": "./credentials.json",
+        "GMAIL_TOKEN_PATH": "./token.json"
+      }
+    },
+    "facebook-manager": {
+      "command": "python3",
+      "args": ["mcp_servers/facebook_mcp.py"],
+      "env": {
+        "FACEBOOK_ACCESS_TOKEN": "${FACEBOOK_ACCESS_TOKEN}",
+        "FACEBOOK_PAGE_ID": "${FACEBOOK_PAGE_ID}"
+      }
+    },
+    "instagram-manager": {
+      "command": "python3",
+      "args": ["mcp_servers/instagram_mcp.py"],
+      "env": {
+        "FACEBOOK_ACCESS_TOKEN": "${FACEBOOK_ACCESS_TOKEN}",
+        "INSTAGRAM_BUSINESS_ACCOUNT_ID": "${INSTAGRAM_BUSINESS_ACCOUNT_ID}"
+      }
+    },
+    "twitter-manager": {
+      "command": "python3",
+      "args": ["mcp_servers/twitter_mcp.py"],
+      "env": {
+        "TWITTER_API_KEY": "${TWITTER_API_KEY}",
+        "TWITTER_API_SECRET": "${TWITTER_API_SECRET}",
+        "TWITTER_ACCESS_TOKEN": "${TWITTER_ACCESS_TOKEN}",
+        "TWITTER_ACCESS_TOKEN_SECRET": "${TWITTER_ACCESS_TOKEN_SECRET}",
+        "TWITTER_BEARER_TOKEN": "${TWITTER_BEARER_TOKEN}"
+      }
+    },
+    "odoo-accounting": {
+      "command": "python3",
+      "args": ["mcp_servers/odoo_mcp.py"],
+      "env": {
+        "ODOO_URL": "${ODOO_URL}",
+        "ODOO_DB": "${ODOO_DB}",
+        "ODOO_USER": "${ODOO_USER}",
+        "ODOO_PASSWORD": "${ODOO_PASSWORD}"
+      }
+    }
+  }
+}

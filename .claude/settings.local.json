@@ -1,0 +1,8 @@
+{
+  "enabledMcpjsonServers": [
+    "gmail-sender",
+    "facebook-manager",
+    "odoo-accounting"
+  ],
+  "enableAllProjectMcpServers": true
+}
