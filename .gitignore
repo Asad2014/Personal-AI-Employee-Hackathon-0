@@ -17,3 +17,7 @@ dashboard/frontend/.env.local
 AI_Employee_Vault/.obsidian/workspace.json
 # Runtime
 orchestrator.pid
+# Keys
+cloud_vm_key.pub
+*.pub
+ai_employee_key.pub
