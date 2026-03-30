@@ -9,3 +9,11 @@ venv/
 .linkedin_session/
 # WhatsApp Playwright session data
 .whatsapp_session/
+# Dashboard
+dashboard/frontend/node_modules/
+dashboard/frontend/.next/
+dashboard/frontend/.env.local
+# Obsidian
+AI_Employee_Vault/.obsidian/workspace.json
+# Runtime
+orchestrator.pid

@@ -48,11 +48,6 @@
 - [2026-03-24 12:30] Odoo test invoice created ($500 - Test Client AI Employee)
 
 ## Alerts
-- **SECURITY:** 2 Netflix new-device sign-in alerts received (Android Phone Chrome + Android Device, Sindh Pakistan) — verify these were authorized logins
-- **OVERDUE:** 2 Acme Corporation invoices ($63,500) overdue 15+ days
-- **STALE:** 1 task stuck in Needs_Action for 25 days (weekly_social_media_strategy)
-- **TOKEN:** Facebook access token renewed (active)
-- **PENDING:** 3 LinkedIn posts awaiting approval
 
 ## Odoo ERP Summary
 - Revenue: $381,045 | Outstanding: $381,045 | Overdue: $63,500
