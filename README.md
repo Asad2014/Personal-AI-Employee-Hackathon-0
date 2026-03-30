@@ -4,8 +4,6 @@ An autonomous AI employee powered by Claude Code and Obsidian. It monitors your 
 
 A real-time **Next.js dashboard** lets you approve/reject AI actions, monitor activity, and manage alerts — all from your browser.
 
-**Tier: Platinum** — Always-on Cloud + Local Executive with Work-Zone Specialization.
-
 ---
 
 ## Dashboard (New)
