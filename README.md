@@ -46,7 +46,28 @@ npm run dev                 # runs on http://localhost:3000
 
 ---
 
-## Platinum Tier Features
+## Bronze Tier Features
+*Estimated time: 8-12 hours*
+
+- **Obsidian Vault** — Dashboard.md and Company_Handbook.md as single source of truth
+- **One Watcher** — Gmail OR file system monitoring (your choice)
+- **Vault Read/Write** — Claude Code reads from and writes to the vault
+- **Basic Folder Structure** — Inbox/, Needs_Action/, Done/
+- **Agent Skills** — All AI functionality implemented as Claude Code skills
+
+## Silver Tier Features
+*Estimated time: 20-30 hours — All Bronze requirements plus:*
+
+- **Multiple Watchers** — Gmail + WhatsApp + LinkedIn running simultaneously
+- **LinkedIn Auto-Posting** — Automatically drafts and posts to LinkedIn to generate leads
+- **Plan.md Generation** — Claude reasoning loop creates structured multi-step plans
+- **First MCP Server** — External action capability (e.g., sending emails via Gmail API)
+- **Approval Workflow** — Human-in-the-loop gates for sensitive actions
+- **Basic Scheduling** — Cron or Task Scheduler for timed operations
+- **Agent Skills** — All AI functionality implemented as Claude Code skills
+
+## Gold Tier Features
+*Estimated time: 40+ hours — All Silver requirements plus:*
 
 - **Cloud 24/7 Deployment** — Oracle Cloud VM running AI Employee as systemd service with auto-restart, health monitoring, and 1GB swap
 - **Gemini Free API** — Claude Code Router proxies requests to Google Gemini API (free tier) for cloud processing
