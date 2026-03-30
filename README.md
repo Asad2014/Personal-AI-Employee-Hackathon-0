@@ -66,30 +66,36 @@ npm run dev                 # runs on http://localhost:3000
 - **Basic Scheduling** — Cron or Task Scheduler for timed operations
 - **Agent Skills** — All AI functionality implemented as Claude Code skills
 
-## Gold Tier Features
+## Gold Tier: Autonomous Employee
 *Estimated time: 40+ hours — All Silver requirements plus:*
 
-- **Cloud 24/7 Deployment** — Oracle Cloud VM running AI Employee as systemd service with auto-restart, health monitoring, and 1GB swap
-- **Gemini Free API** — Claude Code Router proxies requests to Google Gemini API (free tier) for cloud processing
-- **Work-Zone Specialization** — `AGENT_MODE=cloud` (draft-only, never sends) vs `AGENT_MODE=local` (approves and executes)
-- **Claim-by-Move Rule** — Files move from `Needs_Action/` to `In_Progress/<agent>/` to prevent double-work between Cloud and Local agents
-- **Single-Writer Dashboard** — Cloud writes to `Updates/`, only Local merges into `Dashboard.md` (prevents conflicts)
-- **Approved Email Sender** — Local agent auto-sends approved emails from `Approved/` folder via Gmail API
-- **Vault Sync** — Git-based sync between Cloud and Local (cron every 5 minutes)
+1. **Full cross-domain integration** — Personal + Business operations unified
+2. **Odoo Community ERP** — Self-hosted accounting system (Odoo 19+) integrated via MCP server using JSON-RPC APIs — invoicing, contacts, financial reports
+3. **Facebook + Instagram integration** — Post messages and generate engagement summaries via Meta Graph API
+4. **Twitter (X) integration** — Post messages and generate activity summaries via Twitter API v2
+5. **Multiple MCP Servers** — Separate MCP servers for Gmail, Facebook, Instagram, Twitter, Odoo
+6. **Weekly CEO Briefing** — Automated business and accounting audit combining Odoo financials + social media metrics + vault activity
+7. **Error recovery and graceful degradation** — Exponential backoff, thread health monitoring, auto-restart
+8. **Comprehensive audit logging** — Markdown + structured JSON (JSONL) logs for every action
+9. **Ralph Wiggum Loop** — Autonomous re-execution loop for multi-step task completion (Stop hook pattern)
+10. **Documentation** — Architecture diagrams and lessons learned
+11. **Agent Skills** — All AI functionality implemented as Claude Code skills
 
-## Gold Tier Features
+## Platinum Tier: Always-On Cloud + Local Executive
+*Estimated time: 60+ hours — All Gold requirements plus:*
 
-- **Multi-Channel Monitoring** — Gmail, WhatsApp Web, Facebook, Instagram, Twitter, file system inbox — all running as background threads
-- **Social Media Posting** — Facebook (Graph API), Instagram (Graph API), Twitter/X (API v2), LinkedIn (Playwright)
-- **Odoo ERP Accounting** — Self-hosted Odoo 19 via Docker, invoicing, contacts, financial reports via XML-RPC
-- **CEO Briefing** — Weekly automated business report combining Odoo financials + social media metrics + vault activity
-- **Approval Workflow** — Sensitive actions (payments, new contacts, social posts) require human sign-off
-- **Structured Planning** — Complex tasks get broken into multi-step plans with approval gates
-- **Ralph Wiggum Loop** — Autonomous re-execution loop that keeps Claude running until complex tasks are fully complete
-- **Audit Logging** — Both Markdown and structured JSON (JSONL) logs for every action
-- **Error Recovery** — Exponential backoff retry, thread health monitoring, auto-restart (max 5 attempts)
-- **5 MCP Servers** — Gmail, Facebook, Instagram, Twitter, Odoo — giving Claude direct tool access
-- **Agent Skills** — Modular skills for every operation (`/ceo-briefing`, `/process-inbox`, `/facebook-post`, etc.)
+1. **Run AI Employee on Cloud 24/7** — Always-on watchers + orchestrator + health monitoring on Oracle Cloud VM (or AWS/GCP). Oracle Cloud Free VMs recommended.
+2. **Work-Zone Specialization (domain ownership)**
+   - **Cloud owns:** Email triage + draft replies + social post drafts/scheduling (draft-only; requires Local approval before send/post)
+   - **Local owns:** Approvals, WhatsApp session, payments/banking, and final send/post actions
+3. **Delegation via Synced Vault**
+   - Agents communicate by writing files into `/Needs_Action/`, `/Plans/`, `/Pending_Approval/`
+   - Prevent double-work using `/In_Progress/<agent>/` claim-by-move rule
+   - Single-writer rule for Dashboard.md — Cloud writes to `/Updates/`, Local merges
+   - Vault sync via Git (recommended) or Syncthing
+4. **Security rule** — Vault sync includes only markdown/state files. Secrets never sync (.env, tokens, WhatsApp sessions, banking credentials)
+5. **Odoo on Cloud VM (24/7)** — With HTTPS, backups, and health monitoring; Cloud Agent uses Odoo MCP for draft-only actions; Local approves invoice posting/payments
+6. **Platinum Demo (minimum passing gate)** — Email arrives while Local is offline → Cloud drafts reply + writes approval file → when Local returns, user approves → Local executes send via MCP → logs → moves to /Done
 
 ---
 
